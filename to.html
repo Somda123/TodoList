@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> my To-Do List</title>
+    <link rel="stylesheet" href="to.css">
+</head>
+<body>
+    <header><h2><del>To-do-</del></h2></header>
+    <h1> My Day Planning</h1>
+    <center>
+        <table id="to-do" border="4" >
+            <thead>
+                <tr id="all-rows">
+                    <th>Sr No</th>
+                    <th>Date</th>
+                    <th>Today's Goal</th>
+                    <th>Day Planning</th>
+                    <th>Day Reflection</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+                <!-- here comming my enters data -->
+            </tbody>
+        </table>
+    
+        <br>
+
+    </center>
+   
+<center>
+    <br>
+    <div id="input-data"><br>
+        <h2 style="background-color: rgb(130, 241, 26); display: inline;">Enter the your Today Planning</h2><br><br>
+        <label for="Sr">Sr No: </label><input type="number" id="Sr"><br><br>
+        <label for="Date">Date: </label><input type="date" id="Date"><br><br>
+        <label for="Today-goal">Today's Goal: </label><input type="text" id="Today-goal"><br><br>
+        <label for="Day-Planing">Day Planning: </label><input type="text" id="Day-Planing"><br><br>
+        <label for="Day-Reflection">Day Reflection: </label><input type="text" id="Day-Reflection"><br><br>
+        <label for="Description">Description: </label><input type="text" id="Description">
+        <button onclick="addData()">Add</button>
+        <button id="save-btn" onclick="saveData()" style="display: none;">Save</button>
+    
+        <br><br>
+    
+        <label for="sr">Sr No (for delete): </label><input type="text" id="sr">
+        <button onclick="DeleteList()">Delete</button><br><br>
+        <label for="allcrear">All Table data erase</label><button onclick="clearAll()"> All Clear</button><br><br>
+    </div>
+    
+</center>
+<br><br>
+<footer>&copy; this is Made by Geetashri and somda 2024</footer>
+
+    <script src="to.js">
+        
+    </script>
+</body>
+</html>
